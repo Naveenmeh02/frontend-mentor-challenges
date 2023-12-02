@@ -4,14 +4,13 @@
 ## HELLOO!! 👋
 
 This was my first challenge taken from **Frontend Mentor**
-
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
-
+##
+Here is the **[Live Server](http://127.0.0.1:5500/product-preview-card-component-main/fm-project1/index.html)** Link
 ## Desktop view
-![Desktop view](./design/desktop-design.jpg)
+![Desktop view](./fm-project1/images/image-product-desktop.jpg)
 
 ## Mobile view
 
-![Mobile view](./design/mobile-design.jpg)
+![Mobile view](./fm-project1/images/image-product-mobile.jpg)
 
 
