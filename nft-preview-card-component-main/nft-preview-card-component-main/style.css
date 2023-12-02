@@ -1,0 +1,145 @@
+/* custom font */
+  @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Outfit:wght@300;400;600&display=swap');
+
+/* CSS variable */
+
+:root{
+    --clr-prmy-soft-blue:hsl(215, 51%, 70%);
+    --clr-prmy-cyan:hsl(178, 100%, 50%);
+
+    --clr-nrtl-VD-blue-main:hsl(217, 54%, 11%);
+    --clr-nrtl-VD-blue-card:hsl(216, 50%, 16%);
+    --clr-nrtl-VD-blue-line: hsl(215, 32%, 27%);
+    --clr-nrtl-white:hsl(0, 0%, 100%); 
+}
+
+/*
+    1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+    }
+    /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+    }
+    /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+    body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--clr-nrtl-VD-blue-main);
+    color: var(--clr-prmy-soft-blue);
+    font-family: Outfit;
+    font-size: 16px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    }
+    /*
+    5. Improve media defaults
+  */
+    img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    }
+    /*
+    6. Remove built-in form typography styles
+  */
+    input, button, textarea, select {
+    font: inherit;
+    }
+    /*
+    7. Avoid text overflows
+  */
+    p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    }
+    /*
+    8. Create a root stacking context
+  */
+    #root, #__next {
+    isolation: isolate;
+    }
+/* ------general styling------ */
+.container{
+    max-width: 335px;
+    display: grid;
+    gap: 1rem;
+    padding: 24px;
+    background-color: var(--clr-nrtl-VD-blue-card);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-image{
+  border-radius: 8px;
+}
+.card-image:hover{
+  background-color: var(--clr-prmy-soft-blue);
+  cursor: pointer;
+  color: var(--clr-prmy-cyan);
+}
+
+.card-title{
+  color: var(--clr-nrtl-white);
+  font-size: 22px;
+}
+
+.card-title:hover{
+  cursor: pointer;
+  color: var(--clr-prmy-cyan);
+}
+
+.price{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--clr-nrtl-VD-blue-line);
+}
+
+.euth-logo{
+  color: var(--clr-prmy-cyan);
+}
+
+.euth-logo,.euth-svg,.clock,.clock-svg{
+  display: flex;
+  gap:6px;
+  align-items: center;
+}
+
+.user__span{
+  color: var(--clr-nrtl-white);
+  display: flex;
+  flex-direction: row;
+  text-align: inherit;
+  
+}
+
+.user__span:hover{
+  color: var(--clr-prmy-cyan);
+  cursor: pointer;
+}
+
+.avatar-img{
+  width: 35px;
+  border: 1px solid white; 
+  border-radius: 50px;
+  margin-right: 8px;
+}
+
+.avatar-img,.user__span,.user{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  gap: 5px;
+}
